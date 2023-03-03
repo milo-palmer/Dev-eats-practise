@@ -1,0 +1,568 @@
+/* ALL PAGES */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Montserrat:wght@200;400&family=Work+Sans:wght@400;500;800&display=swap');
+
+  .background {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 100%;
+    min-width: 40vh;
+    margin: 0px;
+    background-color:#f1e3e4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    /*
+    border: solid;
+    border-width: 5px;
+    border-color: brown;
+    */
+  }
+  a {
+    text-decoration: none;
+    color: #eaeaea;
+  }
+
+  .blog-title a {
+    color: #b4a7af;
+  }
+  a:hover {
+    color: #47eb83 !important;
+  }
+ 
+
+
+  .main-title {
+    text-align: center;
+    color: #eaeaea;
+    font-size: 5vmin;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+    /*
+    border: solid;
+    border-width: 5px;
+    border-color: orange;
+  */
+    
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    height: auto; 
+    margin: 0px;
+    background-color: #1F1A38;
+    border-width: 2px;
+    padding: 5%;
+
+    /*
+    border: solid;
+    border-width: 5px;
+    border-color: purple;
+    */
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: auto;
+
+    /*
+    border: solid;
+    border-width: 5px;
+    border-color: yellowgreen;
+    */ 
+  }
+  .nav-a { 
+    display: flex;
+    flex-grow: 1;
+    justify-content:center;
+    padding: 3%;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vmin;
+
+    /*
+    border: solid;
+    border-width: 5px;
+    border-color: aqua;  
+    */
+  } 
+  #main-menu a { 
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+
+  }  
+
+  .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: justify;
+    line-height:15pt;
+    margin: 5% 15% 0% 15%;
+    padding: 0% 0% 5% 0%;
+    background-color: #F8F1F2;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /*
+    border: solid;
+    border-color: orange;
+    border-width: 5px;
+    */
+  }
+  .max-width img {
+    width: 100%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    background-color: #1F1A38;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+    min-width: 40vh;
+
+    /*
+    border: solid;
+    border-color: orange;
+    border-width: 5px;
+    */
+  }
+
+  footer div {
+    padding:5px;
+    color: white;
+  }
+
+  .icons {
+    min-width: 15px;
+    min-height: 15px;
+    max-width: 10%;
+    padding: 1%;
+  }
+
+  /* ABOUT */
+  
+  #contact-card {
+    display: flex;
+    flex-flow: row wrap;
+    
+    justify-content: center;
+    background-color:#F8F1F2;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+   
+    border: solid;
+    border-color:#f5e2de;
+    border-width: 2px;
+
+    /*
+    border:solid;
+    border-color: purple;
+    border-width: 5px;
+    */
+  }
+
+  .contact-info {
+    display: block;
+    text-align: center;
+    margin: 2%;
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #1d3a4d;
+
+    /*
+    border:solid;
+    border-color: blue;
+    border-width: 5px;
+    */
+  }
+
+  #about-left {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    flex: 1;
+    background-color:#1f1a38;
+    border-radius: 5px;
+    min-width: 20vmax;
+    
+    
+   /* 
+    border:solid;
+    border-color: yellowgreen;
+    border-width: 5px;
+    */
+  }
+
+  #profile-pic {
+    display: flex;
+    justify-content: center;
+    align-content: bottom;
+    padding: 15%;
+
+   /* border:solid;
+    border-color: magenta;
+    border-width: 5px;
+    */
+  }
+  
+  #profile-pic img {
+    max-inline-size: 100%;
+    block-size: auto;
+    object-fit: contain;
+    border-radius: 50%;
+    
+
+
+    /*
+    border:solid;
+    border-color: white;
+    border-width: 3px;
+    */
+    
+  }
+  
+
+  #bio {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: justify;
+    flex: 2;
+    padding: 5%;
+    min-width: 20vmax;
+    font-size: auto;
+    color: #1F1A38;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 2;
+    /*
+    border:solid;
+    border-color: orange;
+    border-width: 5px;
+    */
+  }
+
+  #bio a {
+    color: #1F1A38;
+  }
+
+  
+/* TECH BLOG */
+
+.blog-content {
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 2%;
+
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+/*
+  border: solid;
+  border-color: black;
+  border-width: 2px;
+  */
+}
+
+.blog-title {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: auto;
+  background-color: #F8F1F2;
+  color: #1F1A38;
+  width: 80%;
+  margin: 10% 0% 5% 0%;
+  padding: 5% 2% 5% 2%;
+  border-top-right-radius: 10px;;
+  border-bottom-right-radius: 10px;
+  font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 4vmin;
+}
+
+.blog-title h6 {
+  color: #D664BE;
+}
+
+.blog-intro h2 {
+  font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+}
+.post-head {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  background-color: white(189, 223, 87, 0.869);
+  color:rgb(33, 35, 37);
+  border-radius: 5px;
+  padding: 2%;
+  font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+.blog-q h4 {
+  font-size: 2.5vmax;
+  padding-left: 5%;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.centre-heading h4 {
+  text-align: center;
+  font-size: 2.5vmax;
+  padding: 2%;
+  background-color: #996888;
+  color: #F1E3E4;
+}
+
+.post-head-tech {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  background-color: white(189, 223, 87, 0.869);
+  color:rgb(33, 35, 37);
+  border-radius: 5px;
+  padding: 2%;
+  font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+.parent-div {
+  display:block;
+  position: relative;
+
+  height: 10vh;
+  border:dotted;
+  border-color:rgba(27, 32, 12, 0.869);
+  background-color:#9f8f99; 
+  border-radius: 5px;
+  opacity: .8;
+  border-width:5px;
+  padding: 0px;
+  margin: 2% 20% 2% 20%;
+  min-height: 200px;
+}
+
+.static-child {
+  width: 40px;
+  height: 40px;
+  border: solid;
+  border-color: black;
+  border-width: 2px; 
+  border-radius: 5px;
+}
+
+.img-ex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  padding: 2%;
+}
+
+.img-ex p {
+  width: 25vmax;
+  padding: 1%;
+}
+.img-ex img {
+  display: block;
+  object-fit:contain;
+  max-width: 25vmax;
+  height: auto;
+  border-radius: 25px;
+  padding: 2%;
+}
+
+.position h4 {
+  font-size: 4vmax;
+}
+
+#child-absolute {
+  display:block;
+  position: absolute;
+  left: 50px;
+  bottom: 0px;
+  width: 40px;
+  height: 40px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  background-color: purple;
+  border-radius: 5px;
+}
+
+.position {
+  font-size: 2vmax;
+  line-height: 2;
+  
+}
+
+.position p {
+  text-align: justify;
+  font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+.position h4 {
+  text-align: center;
+  font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#child-relative {
+  display:block;
+  position:relative;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  background-color: orange;
+  border-radius: 5px;
+}
+
+#child-fixed {
+  display: block;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  background-color: rgb(45, 123, 225);
+  border-radius: 5px;
+}
+
+/* VALUES AND IDENTITY */
+
+.quote {
+  background-color:#42033D;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  text-align: justify;
+  text-justify: auto;
+  color: #47EB83;
+  padding: 5%;
+  margin: 5% 12% 5% 12%;
+  font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.quote p {
+  padding-left: 2%;
+  border-left:solid;
+  border-color: #D664BE;
+  border-width: 7px;
+  font-size: 1.5vmax;
+}
+
+.quote h5 {
+  padding-left: 2%;
+  border-left:solid;
+  border-color: #42033D;
+  border-width: 7px;
+  font-size: 1.5vmax;
+  line-height: 1.5;
+  color: #F8F1F2;
+}
+
+.detailing-purple {
+  border:solid;
+  border-color: #6a2153;
+  border-width: 3px;
+  background-color:#6a2153;
+}
+
+
+.blog-content h3 {
+  padding: 10%;
+  text-align: right;
+  background-color: #1F1A38;
+  font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+  color: #F1E3E4;
+  border-right: solid;
+  border-color: #47EB83;
+  border-width: 10px;
+  font-size: 3vmax;
+  line-height: 2;
+}
+
+
+
+.blog-home h3 {
+  padding: 10% 5% 10% 10%;
+  text-align: right;
+  font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+  color: #162939;
+  font-size: 3vmax;
+  line-height: 2;
+}
+
+.blog-home h3:hover {
+  color: #47EB83 !important;
+}
+
+#core {
+  background-color: #646E68;
+}
+
+.blog-home #tech {
+  background-color: #42033D;
+  color: #F1E3E4;
+}
+
+#tech {
+  background-color: #42033D;
+  color: #F1E3E4;
+}
+
+.blog-home #story {
+  background-color: #996888;
+  color: #1F1A38;
+}
+
+#story {
+  background-color: #996888;
+  color: #1F1A38;
+}
+
+.blog-home h5 {
+  padding: 0% 5% 2% 2%;
+  text-align: right;
+  font-weight: 1;
+  font-size: 2vmax;
+  padding-bottom: 3%;
+}
+
+.blog-content p {
+  padding: 2% 5% 2% 5%;
+  font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5vmax;
+  line-height: 2;
+}
+
+.blog-content div p{
+  font-size: 1.5vmax;
+  line-height: 2;
+}
+
+.post-head h5 {
+  font-size: 2vmax;
+  padding-bottom: 3%;
+}
+
