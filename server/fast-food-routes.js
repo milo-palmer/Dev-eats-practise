@@ -9,7 +9,6 @@ fastFoodRouter.get('/', async (req, res) => {
     const asianData = cuisinesData.cuisines.find((cuisine) =>
       cuisine.hasOwnProperty('fastFood')
     )
-
     const finalData = asianData.fastFood
     const obj = { item: finalData }
     res.render('details', obj)
@@ -18,22 +17,21 @@ fastFoodRouter.get('/', async (req, res) => {
   }
 })
 
-
 fastFoodRouter.get('/:id', async (req, res) => {
   try {
     const data = await fs.readFile('server/data/data.json', 'utf-8')
     const cuisinesData = JSON.parse(data)
-    const fastFoodData = cuisinesData.cuisines.filter((cuisine) => {
+    const fastFoodData = cuisinesData.cuisines.find((cuisine) => {
       if (cuisine.hasOwnProperty('fastFood')) {
-        return cuisine.fastFood[Number(req.params.id) - 1]
+        return cuisine
       }
     })
+    //  fastFoodData.fastFood
     const finalData = fastFoodData.fastFood[Number(req.params.id) - 1]
-    res.render('resturant', finalData)
+    res.render('restaurant', finalData)
   } catch (err) {
     console.log(err)
   }
-
 })
 
 module.exports = fastFoodRouter
