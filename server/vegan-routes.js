@@ -2,8 +2,6 @@ const express = require('express')
 const fs = require('fs').promises
 const veganRouter = express.Router()
 
-const fs = require('node:fs/promises')
-
 veganRouter.get('/', async (req, res) => {
   try {
     const data = await fs.readFile('server/data/data.json', 'utf-8')
@@ -24,12 +22,13 @@ veganRouter.get('/:id', async (req, res) => {
   try {
     const data = await fs.readFile('server/data/data.json', 'utf-8')
     const cuisinesData = JSON.parse(data)
-    const asianData = cuisinesData.cuisines.find((cuisine) => {
+    const fastFoodData = cuisinesData.cuisines.find((cuisine) => {
       if (cuisine.hasOwnProperty('vegan')) {
-        return cuisine.indian[Number(req.params.id) - 1]
+        return cuisine
       }
     })
-    const finalData = asianData.vegan[Number(req.params.id) - 1]
+    //  fastFoodData.fastFood
+    const finalData = fastFoodData.vegan[Number(req.params.id) - 1]
     res.render('restaurant', finalData)
   } catch (err) {
     console.log(err)

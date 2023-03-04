@@ -1,11 +1,11 @@
 <div class="rest-container">
   {{#each item}}
-  <div>
-    <a href="/asian/{{id}}"><img class="img-circle" src="{{Image}}" alt="{{Name}}"></a>
-    <div class="text-container">
+  <div class="restaurant-list">
+    <a href="/{{link}}/{{id}}"><div class="gradient"></div></a>
+    <img class="img-circle" src="{{Image}}" alt="{{Name}}">
+      <div class="text-container">
       <h2>{{Name}}</h2>
-    </div> 
+    </div>  
   </div>
-       
   {{/each}}
 </div>

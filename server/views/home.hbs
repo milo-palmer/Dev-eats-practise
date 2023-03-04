@@ -1,10 +1,20 @@
-<div class="container">
+<section class="landing">
+  <div class="home-container grid">
+    <div>
+      <h1>Wondering what to eat we've got you covered</h1>
+       <a href="#list"><button>View The List</button></a> 
+    </div>
+  </div>
+</section>
+
+<div class="container" id="list">
   {{#each restaurant}}
   <div class="restaurant-list">
-    <a href="/{{name}}"><img class="img-circle" src="{{image}}" alt="{{name}}"></a>
-    <div class="text-container">
+    <a href="/{{name}}"><div class="gradient"></div></a>
+    <img class="img-circle" src="{{image}}" alt="{{name}}">
+      <div class="text-container">
       <h2>{{name}}</h2>
-    </div>    
+    </div>  
   </div>
   {{/each}}
 </div>
