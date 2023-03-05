@@ -10,6 +10,7 @@ const italianRouter = require('./italian-routes')
 const asianRouter = require('./asian-routes')
 const indianRouter = require('./indian-routes')
 const veganRouter = require('./vegan-routes')
+const restaurantRoutes = require('./restaurant-routes')
 
 // Server configuration
 const publicFolder = __dirname + '/public'
@@ -45,5 +46,6 @@ server.use('/italian', italianRouter)
 server.use('/asian', asianRouter)
 server.use('/indian', indianRouter)
 server.use('/vegan', veganRouter)
+server.use('/resturants', restaurantRoutes)
 
 module.exports = server
