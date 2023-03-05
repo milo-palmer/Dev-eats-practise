@@ -1,0 +1,19 @@
+
+<form class="form" action="/resturants/{{Name}}" method="post">
+  <label for="name" class="form-item">
+    Restaurant:
+    <input type="text" name="name" placeholder="Search the name of a restaurant">
+  </label>
+   <input type="submit" name="" value="Submit">
+</form>
+<div class="container">
+  {{#each restaurant}}
+  <div class="restaurant-list">
+    <a href="/{{link}}/{{id}}"><div class="gradient"></div></a>
+    <img class="img-circle" src="{{Image}}" alt="{{Name}}">
+      <div class="text-container">
+      <h2>{{Name}}</h2>
+    </div>  
+  </div>
+  {{/each}}
+</div>
